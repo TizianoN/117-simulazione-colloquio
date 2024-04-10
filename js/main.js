@@ -7,6 +7,8 @@ function checkResult() {
     { target: 17, numbersList: [1, 10, 5, 8, 12, 3], expected: [2, 4] },
   ];
 
+  let testSuccess = true;
+
   // Esegue i test
   tests.forEach((test, index) => {
     const { target, numbersList, expected } = test;
@@ -19,12 +21,20 @@ function checkResult() {
           index + 1
         }: Fallito.\nTarget: ${target} \nInviato: [${numbersList}] \nAtteso: [${expected}] \nOttenuto: [${result}]`
       );
+
+      testSuccess = false;
     }
   });
+
+  if (testSuccess) {
+    console.log(`Congratulazioni! Hai superato il test tecnico.`);
+  }
 }
 
 if (testReady) {
   checkResult();
 } else {
-  console.info('Quando sarai pronto per testare la tua funzione switcha la variabile "testReady" su "true"');
+  console.info(
+    'Quando sarai pronto per testare la tua funzione switcha il valore della variabile "testReady" su "true"'
+  );
 }

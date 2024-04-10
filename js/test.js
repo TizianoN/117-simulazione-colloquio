@@ -1,8 +1,8 @@
-// Quando sarai pronto per testare la tua funzione switcha la variabile "testReady" su "true";
-const testReady = false;
+// Quando sarai pronto per testare la tua funzione switcha il valore della variabile "testReady" su "true";
+const testReady = true;
 
 // Scrivi di seguito lo svolgimento della traccia
-function findValues(target, numbersList) {
+function findIndexes(target, numbersList) {
   const map = [];
   for (let i = 0; i < numbersList.length; i++) {
     const complement = target - numbersList[i];

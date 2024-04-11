@@ -17,11 +17,12 @@ function checkResult() {
       console.log(`Test ${index + 1}: Passato`);
     } else {
       console.error(
-        `Test ${
-          index + 1
-        }: Fallito.\nTarget: ${target} \nInviato: [${numbersList}] \nAtteso: [${expected}] \nOttenuto: [${result}]`
+        `Test ${index + 1}: Fallito.
+Target: ${target}
+Inviato: [${numbersList}]
+Atteso: [${expected}]
+Ottenuto: [${result}]`
       );
-
       testSuccess = false;
     }
   });

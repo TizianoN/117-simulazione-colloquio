@@ -28,7 +28,7 @@ Ottenuto: [${result}]`
   });
 
   if (testSuccess) {
-    console.log(`Congratulazioni! Hai superato il test tecnico.`);
+    console.log(`Hai superato il test tecnico, congratulazioni!`);
   }
 }
 
